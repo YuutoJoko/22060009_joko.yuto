@@ -3,7 +3,7 @@
 
 システム設計図
 システムはapp.pyとlogic.pyの2つの主要なファイルで構成されています。
-![System Diagram]()
+![System Diagram](https://github.com/YuutoJoko/22060009_joko.yuto/blob/main/Gemini_Generated_Image_6adpej6adpej6adp.png)
 
 コード スニペット
 
