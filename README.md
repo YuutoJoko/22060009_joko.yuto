@@ -5,8 +5,8 @@
 システムはapp.pyとlogic.pyの2つの主要なファイルで構成されています。
 ![System Diagram](https://github.com/YuutoJoko/22060009_joko.yuto/blob/main/Gemini_Generated_Image_6adpej6adpej6adp.png)
 
-コード スニペット
-
+コード 設計図
+![Code Diagram]
 Streamlitアプリ: ユーザーインターフェースを提供し、都市の選択と天気情報の表示を行います。
 app.py: Streamlitアプリケーションのメインファイルで、ユーザーからの入力を受け取り、logic.pyを呼び出して天気情報を取得し、結果を整形して表示します。
 logic.py: 外部の天気API (wttr.in) と通信し、天気データを取得・解析します。取得した英語の天気情報を日本語に変換する機能も持ちます。
