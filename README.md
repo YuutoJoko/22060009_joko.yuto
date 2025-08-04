@@ -1,1 +1,32 @@
-# 22060009_joko.yuto
+システムの概要
+このシステムは、ユーザーが指定した日本の都市のリアルタイム天気情報を表示するWebアプリケーションです。Streamlitフレームワークを使用して構築されており、直感的なインターフェースで天気予報を提供します。
+
+システム設計図
+システムはapp.pyとlogic.pyの2つの主要なファイルで構成されています。
+
+コード スニペット
+graph TD
+    A[Streamlit アプリ] -->|APIリクエスト| B[app.py]
+    B -->|天気情報要求| C[logic.py]
+    C -->|wttr.in API通信| D[外部天気API (wttr.in)]
+    D -->|APIレスポンス| C
+    C -->|天気情報変換| B
+    B -->|天気情報表示| A
+Streamlitアプリ: ユーザーインターフェースを提供し、都市の選択と天気情報の表示を行います。
+app.py: Streamlitアプリケーションのメインファイルで、ユーザーからの入力を受け取り、logic.pyを呼び出して天気情報を取得し、結果を整形して表示します。
+logic.py: 外部の天気API (wttr.in) と通信し、天気データを取得・解析します。取得した英語の天気情報を日本語に変換する機能も持ちます。
+外部天気API (wttr.in): リアルタイムの天気情報を提供するAPIです。
+
+コード説明図
+app.py:検索フォームの表示　検索結果の表示
+
+logic.py:wttr.in APIとの通信　英語の天気情報を日本語に変換
+
+アプリケーションの利用方法
+アプリケーションにアクセスします。
+ドロップダウンメニューから天気を知りたい都市を選択します。
+「🌦 天気を確認」ボタンをクリックすると、選択した都市の現在の天気情報（天気の状態、現在気温、最高気温、最低気温）が表示されます。
+
+その他
+アプリURL: [https://22050005kogaaiprogrammingkadai2-6xbbdsyoub5kw9bls39bc.streamlit.app/](http://localhost:8501)
+GitHub URL: [https://github.com/FCA22050005/22050005_koga_AIprogramming_kadai2?tab=readme-ov-file](https://github.com/YuutoJoko/22060009_joko.yuto)
