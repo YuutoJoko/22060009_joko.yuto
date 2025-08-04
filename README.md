@@ -22,5 +22,5 @@ logic.py:wttr.in APIとの通信　英語の天気情報を日本語に変換
 「🌦 天気を確認」ボタンをクリックすると、選択した都市の現在の天気情報（天気の状態、現在気温、最高気温、最低気温）が表示されます。
 
 その他
-アプリURL: [https://22050005kogaaiprogrammingkadai2-6xbbdsyoub5kw9bls39bc.streamlit.app/](http://localhost:8501)
-GitHub URL: [https://github.com/FCA22050005/22050005_koga_AIprogramming_kadai2?tab=readme-ov-file](https://github.com/YuutoJoko/22060009_joko.yuto)
+アプリURL: http://localhost:8501
+GitHub URL: https://github.com/YuutoJoko/22060009_joko.yuto
