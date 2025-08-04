@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>天気アプリ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f8ff;
+            padding: 2em;
+            text-align: center;
+        }
+        .box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2em;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        input {
+            padding: 0.5em;
+            font-size: 1em;
+        }
+        button {
+            padding: 0.5em 1em;
+            font-size: 1em;
+            margin-left: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>天気アプリ</h1>
+        <form method="POST">
+            <input type="text" name="city" placeholder="都市名を入力（例：福岡）">
+            <button type="submit">検索</button>
+        </form>
+
+        {% if weather %}
+            {% if weather.error %}
+                <p style="color: red;">エラー: {{ weather.error }}</p>
+            {% else %}
+                <h2>{{ weather.city }} の天気</h2>
+                <p>天気: {{ weather.weather }}</p>
+                <p>最高気温: {{ weather.max }} ℃</p>
+                <p>最低気温: {{ weather.min }} ℃</p>
+            {% endif %}
+        {% endif %}
+    </div>
+</body>
+</html>
